@@ -23,6 +23,6 @@ Detail Spesification
 - (1) Noble Security Lock
 - (1) AC Power In (Worked)
 - (1) Multi-media Card Reader (Not tested)
--           Digital (SD) Memory Card (Not tested)
--           SD High-Capacity (SDHC) card (not tested)
--           SD 3.0 Card (Not tested)
+          - Digital (SD) Memory Card (Not tested)
+          - SD High-Capacity (SDHC) card (not tested)
+          - SD 3.0 Card (Not tested)
