@@ -6,11 +6,11 @@ Detail Spesification
 - Processor : Intel® Core™  i7-4720HQ 2.6Ghz Turbo up to 3.6Ghz
 - Memory : 8GB Dual Channel DDR3L 1600MHz (4GBx2)
 - Hard Drive : SSD 25GB + 1TB 5400RPM
-- Graphics : nVidia GeForce GTX950M 4GB GDDR3 (Disabled)
+- Graphics : Intel HD 4600 (Worked) + nVidia GeForce GTX950M 4GB GDDR3 (Disabled)
 - Optical Drive : DVDRW (Replaced with HDD Caddy)
 - Operating System : macOS High Sierra 10.13.2 + Windows 10 Home Spring Creator Update
 - Networking : 802.11 b/g/n (Worked) + Bluetooth 4.0 (Not Worked)
-- Keyboard : Backlight keyboard (Worked)
+- Keyboard : Backlight keyboard (Worked) + Brightness (Worked without FN key)
 - Audio : 2 Tuned Speakers, built-in Subwoofer with Waves MaxxAudio® Pro processing (Worked with AppleALC.kext + Lilu.kext)
 - Battery : 65 WHr, 6-Cell Battery (Battery percentage worked)
 - Camera : HD Web Camera (Worked)
