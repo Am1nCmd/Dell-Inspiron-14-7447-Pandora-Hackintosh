@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>12F37</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>BTFirmwareUploader</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.BTFirmwareUploader</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>BTFirmwareUploader</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.3</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleVersion</key>
+	<string>1.3</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvmgcc42</string>
+	<key>DTPlatformBuild</key>
+	<string>4H1503</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>11E52</string>
+	<key>DTSDKName</key>
+	<string>macosx10.7</string>
+	<key>DTXcode</key>
+	<string>0463</string>
+	<key>DTXcodeBuild</key>
+	<string>4H1503</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>Atheros-3002-0cf3</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use Alt Win Firmware</key>
+			<false/>
+			<key>UseLinuxFirmware</key>
+			<false/>
+			<key>idProduct</key>
+			<integer>12290</integer>
+			<key>idVendor</key>
+			<integer>3315</integer>
+		</dict>
+		<key>Atheros-311d-03f0 </key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UseLinuxFirmware</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>12573</integer>
+			<key>idVendor</key>
+			<integer>1008</integer>
+		</dict>
+		<key>Atheros-3362-13d3</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use Alt Win Firmware</key>
+			<false/>
+			<key>UseLinuxFirmware</key>
+			<false/>
+			<key>idProduct</key>
+			<integer>13154</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>Atheros-AR3011-3304-13d3</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use Alt Win Firmware</key>
+			<false/>
+			<key>Use Linux Firmware</key>
+			<false/>
+			<key>bcdDevice</key>
+			<integer>1</integer>
+			<key>idProduct</key>
+			<integer>13060</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>Atheros-AR3012-3005-04ca</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>UseLinuxFirmware</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>12293</integer>
+			<key>idVendor</key>
+			<integer>1226</integer>
+		</dict>
+		<key>AzureWave-3404-13d3</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.BTFirmwareUploader</string>
+			<key>IOClass</key>
+			<string>BTFirmwareUploader</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>Use BCM Firmware</key>
+			<true/>
+			<key>idProduct</key>
+			<integer>13316</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>InfoChange -  AR3011</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>Atheros USB Bluetooth 3.0 Controller</string>
+			</dict>
+			<key>idProduct</key>
+			<integer>13060</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+		<key>InfoChange - AzureWave</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.driver.AppleUSBMergeNub</string>
+			<key>IOClass</key>
+			<string>AppleUSBMergeNub</string>
+			<key>IOProviderClass</key>
+			<string>IOUSBDevice</string>
+			<key>IOProviderMergeProperties</key>
+			<dict>
+				<key>USB Product Name</key>
+				<string>Broadcom USB Bluetooth 4.0 Controller</string>
+				<key>idProduct</key>
+				<integer>13316</integer>
+				<key>idVendor</key>
+				<integer>5075</integer>
+			</dict>
+			<key>idProduct</key>
+			<integer>13316</integer>
+			<key>idVendor</key>
+			<integer>5075</integer>
+		</dict>
+	</dict>
+	<key>NSHumanReadableCopyright</key>
+	<string>Copyright © 2012-2013 EMlyDinEsH(OSXLatitude). All rights reserved.</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.iokit.IOUSBFamily</key>
+		<string>4.5.8</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>11.3.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>11.3.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Root</string>
+</dict>
+</plist>

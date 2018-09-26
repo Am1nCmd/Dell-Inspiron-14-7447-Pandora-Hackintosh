@@ -10,8 +10,6 @@
 			<dict>
 				<key>FixHPET</key>
 				<false/>
-				<key>FixHeaders</key>
-				<false/>
 				<key>FixMutex</key>
 				<false/>
 				<key>FixRTC</key>
@@ -49,6 +47,8 @@
 				<string>OptTabl</string>
 			</dict>
 		</array>
+		<key>FixHeaders</key>
+		<false/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -187,6 +187,9 @@
 		<array>
 			<string>Preboot</string>
 			<string>Windows SSD</string>
+			<string>Data exFAT</string>
+			<string>Data NFS</string>
+			<string>Remote Disc</string>
 		</array>
 		<key>Language</key>
 		<string>en:0</string>
@@ -327,7 +330,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02MX37TG86R7E8G4</string>
+		<string>C02351102J9F64W8C</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -355,7 +358,7 @@
 		<key>ProductName</key>
 		<string>MacBookPro11,2</string>
 		<key>SerialNumber</key>
-		<string>C02MX37TG86R</string>
+		<string>C02LVOEBG86R</string>
 		<key>SmUUID</key>
 		<string>CC51402C-1058-4305-8992-A17BAC1C120F</string>
 		<key>Version</key>
