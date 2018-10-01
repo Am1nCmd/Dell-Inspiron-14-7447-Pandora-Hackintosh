@@ -15,7 +15,7 @@
 				<key>FixRTC</key>
 				<false/>
 				<key>FixRegions</key>
-				<false/>
+				<true/>
 				<key>FixTMR</key>
 				<false/>
 			</dict>
@@ -48,7 +48,7 @@
 			</dict>
 		</array>
 		<key>FixHeaders</key>
-		<false/>
+		<true/>
 		<key>HaltEnabler</key>
 		<true/>
 		<key>SSDT</key>
@@ -62,22 +62,18 @@
 				<key>APSN</key>
 				<true/>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
-		<key>SortedOrder</key>
-		<array>
-			<string>SSDT-0.aml</string>
-			<string>SSDT-1.aml</string>
-			<string>SSDT-2.aml</string>
-		</array>
 	</dict>
 	<key>Boot</key>
 	<dict>
+		<key>Arguments</key>
+		<string>-ath9565</string>
 		<key>CustomLogo</key>
 		<string>Theme</string>
 		<key>DefaultLoader</key>
@@ -87,6 +83,8 @@
 		<key>NeverHibernate</key>
 		<true/>
 		<key>NoEarlyProgress</key>
+		<true/>
+		<key>RtcHibernateAware</key>
 		<true/>
 		<key>Timeout</key>
 		<integer>3</integer>
@@ -197,6 +195,8 @@
 		<dict>
 			<key>Entries</key>
 			<true/>
+			<key>Legacy</key>
+			<false/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -250,20 +250,20 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>Unlock Port Limit USB XHC High Sierra</string>
+				<string>Unlock Port Limit USB XHC Mojave</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				g32MEA==
+				g/sPD4MDBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
 				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
+				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g32MGw==
+				g/sPkJCQkJCQ
 				</data>
 			</dict>
 			<dict>
@@ -300,6 +300,26 @@
 				<key>Replace</key>
 				<data>
 				RiV1VHh4eHgA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Enable HDMI</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AAIAAAAwAAAAAQUJAAAEAACHAAAAAgQJAAAEAACHAAAA
+				/wAA
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>AppleIntelFramebufferAzul</string>
+				<key>Replace</key>
+				<data>
+				AAIAAAAwAAAAAQUJAAAIAAAGAAAAAgQJAAAIAACHAAAA
+				/wAA
 				</data>
 			</dict>
 		</array>
@@ -351,8 +371,6 @@
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
-		<key>Mobile</key>
-		<false/>
 		<key>PlatformFeature</key>
 		<string>0x02</string>
 		<key>ProductName</key>
