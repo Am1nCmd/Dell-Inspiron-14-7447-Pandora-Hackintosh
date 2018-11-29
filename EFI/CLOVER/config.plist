@@ -120,7 +120,7 @@
 					<key>Disabled</key>
 					<false/>
 					<key>FullTitle</key>
-					<string>macOS High Sierra</string>
+					<string>macOS Mojave</string>
 					<key>Hidden</key>
 					<false/>
 					<key>Ignore</key>
@@ -131,8 +131,6 @@
 					<false/>
 					<key>Type</key>
 					<string>OSX</string>
-					<key>Volume</key>
-					<string>C1433811-EE23-479E-A518-CEE48496ACA6</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -153,8 +151,6 @@
 					<false/>
 					<key>Type</key>
 					<string>OSXRecovery</string>
-					<key>Volume</key>
-					<string>D156D311-615C-407E-9251-82BF73ACB485</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -174,8 +170,24 @@
 </string>
 					<key>Type</key>
 					<string>Windows</string>
-					<key>Volume</key>
-					<string>B6852793-7951-4EDE-8976-13EB00220470</string>
+					<key>VolumeType</key>
+					<string>Internal</string>
+				</dict>
+				<dict>
+					<key>CustomLogo</key>
+					<string>Theme</string>
+					<key>Disabled</key>
+					<false/>
+					<key>FullTitle</key>
+					<string>PhoenixOS</string>
+					<key>Hidden</key>
+					<false/>
+					<key>Ignore</key>
+					<false/>
+					<key>Path</key>
+					<string>\EFI\PhoenixOS\boot\grubx64.efi</string>
+					<key>Type</key>
+					<string>Linux</string>
 					<key>VolumeType</key>
 					<string>Internal</string>
 				</dict>
@@ -203,7 +215,7 @@
 		<key>ScreenResolution</key>
 		<string>1366x768</string>
 		<key>Theme</key>
-		<string>Mojave</string>
+		<string>El Capitan</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
