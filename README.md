@@ -10,7 +10,7 @@ Detail Spesification
 - Storage : SSD Samsung 850 Pro 256GB + HDD Toshiba 1TB
 - Audio Codec : Realtek ALC255
 - LAN : Realtek RTL8168GU Gigabit Port
-- Wifi : Atheros AR9565 + Bluetooth
+- Wifi : BCM94352Z + Bluetooth
 - Touchpad : PS2 Interface
 - Screen Size : 14"
 - Screen Resolution : 1366 x 768
