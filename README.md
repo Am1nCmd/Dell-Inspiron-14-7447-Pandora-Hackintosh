@@ -1,6 +1,5 @@
 # Dell Inspiron 14 7447  Pandora Hackintosh
-
-[![Screen_Shot_2018-10-02_at_06.18.02.png](https://i.postimg.cc/hjXB8Bsd/Screen_Shot_2018-10-02_at_06.18.02.png)](https://postimg.cc/5YWT1DZ4)
+[![image.png](https://i.postimg.cc/k5b9JbX5/image.png)](https://postimg.cc/xknBgqmr)
 Detail Spesification
 
 - Processor : Intel Core i7 4720HQ
@@ -15,6 +14,9 @@ Detail Spesification
 - Screen Size : 14"
 - Screen Resolution : 1366 x 768
 - OS : macOS Mojave 10.14 Build 18A391
+- Boot Mode : UEFI
+- CLOVER Version : r5058
+- OS : macOS Mojave 10.14.6 Build 18G95
 
 Work
 
@@ -25,6 +27,8 @@ Work
 - QE/CI of IGPU
 - HDMI Out
 - HDMI Audio
+- AirDrop
+- Handoff
 - Brightnes
 - Fn + Brightness UP/Down
 - CPU Power Management
@@ -33,6 +37,7 @@ Work
 - Wifi
 - Battery Indicator
 - Etc
+
 
 Not Working
 
