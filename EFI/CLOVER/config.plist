@@ -372,7 +372,7 @@
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02351102J9F64W8C</string>
+		<string>C02428200J9FJQW1M</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -398,9 +398,9 @@
 		<key>ProductName</key>
 		<string>MacBookPro11,2</string>
 		<key>SerialNumber</key>
-		<string>C02LVOEBG86R</string>
+		<string>C02N202PG86R</string>
 		<key>SmUUID</key>
-		<string>CC51402C-1058-4305-8992-A17BAC1C120F</string>
+		<string>96FC47F4-B33B-4182-AC47-7F35793727F4</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
