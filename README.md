@@ -1,5 +1,14 @@
 # Dell Inspiron 14 7447  Pandora Hackintosh
 [![image.png](https://i.postimg.cc/k5b9JbX5/image.png)](https://postimg.cc/xknBgqmr)
+
+# Update 4 Feb 2021
+- adding OpenCore Bootloader
+- now you can choose between Clover or OpenCore Bootloader
+- update and optimize config for macOS Catalina
+
+# How to use it
+just place EFI folder and boot file on your EFI Partition
+
 Detail Spesification
 
 - Processor : Intel Core i7 4720HQ
@@ -42,4 +51,5 @@ Work
 Not Working
 
 - Nvidia Card (Switchable Graphics is not supported by Hackintosh)
+- Audio Sound may little bit glich when using OpenCore bootloader
 - Etc
