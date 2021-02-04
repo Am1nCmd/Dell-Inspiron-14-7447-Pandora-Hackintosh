@@ -9,8 +9,7 @@
 # How to use it
 just place EFI folder and boot file on your EFI Partition
 
-Detail Spesification
-
+## Detail Spesification
 - Processor : Intel Core i7 4720HQ
 - IGPU : Intel HD Graphics 4600
 - GPU Discrette : Nvidia GT950M 4GB DDR3
@@ -27,8 +26,7 @@ Detail Spesification
 - CLOVER Version : r5058
 - OS : macOS Mojave 10.14.6 Build 18G95
 
-Work
-
+## Work
 - Restart, Shutdown and Sleep
 - Audio Out and Mic In and Still Work after Wake
 - Sleep and Wake with Close and Open LID
@@ -47,9 +45,7 @@ Work
 - Battery Indicator
 - Etc
 
-
-Not Working
-
+## Not Working
 - Nvidia Card (Switchable Graphics is not supported by Hackintosh)
 - Audio Sound may little bit glich when using OpenCore bootloader
 - Etc
