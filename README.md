@@ -1,15 +1,19 @@
-# Dell Inspiron 14 7447  Pandora Hackintosh
-[![image.png](https://i.postimg.cc/k5b9JbX5/image.png)](https://postimg.cc/xknBgqmr)
+# Dell Inspiron 14 7447 Pandora Hackintosh
+[![image.png](https://i.postimg.cc/yN1XXpdF/image.png)](https://postimg.cc/XrPCn89J)
 
-# Update 4 Feb 2021
-- adding OpenCore Bootloader
-- now you can choose between Clover or OpenCore Bootloader
-- update and optimize config for macOS Catalina
+## Update 16 Aug 2021
+- Update to OpenCore Bootloader v0.7.2
+- Add support with macOS BigSur 11.5.2
 
-# How to use it
-just place EFI folder and boot file on your EFI Partition
+## Update 4 Feb 2021
+- Adding OpenCore Bootloader
+- Now you can choose between Clover or OpenCore Bootloader
+- Update and optimize config for macOS Catalina
 
-## Detail Spesification
+## How to use it
+Place EFI folder on your EFI Partition
+
+## Specification :
 - Processor : Intel Core i7 4720HQ
 - IGPU : Intel HD Graphics 4600
 - GPU Discrette : Nvidia GT950M 4GB DDR3
@@ -17,35 +21,35 @@ just place EFI folder and boot file on your EFI Partition
 - Storage : SSD Samsung 850 Pro 256GB + HDD Toshiba 1TB
 - Audio Codec : Realtek ALC255
 - LAN : Realtek RTL8168GU Gigabit Port
-- Wifi : BCM94352Z + Bluetooth
-- Touchpad : PS2 Interface
+- Wifi : Broadcomm BCM94352Z + Bluetooth
+- Touchpad : Synaptic PS2 Interface
 - Screen Size : 14"
 - Screen Resolution : 1366 x 768
-- OS : macOS Mojave 10.14 Build 18A391
 - Boot Mode : UEFI
-- CLOVER Version : r5058
-- OS : macOS Mojave 10.14.6 Build 18G95
+- Bootloader : OpenCore r0.7.2
+- macOS Version : macOS Big Sur 11.5.2 Build 20G95
+
 
 ## Work
+- QE/CI Graphics of Intel HD 4600
 - Restart, Shutdown and Sleep
-- Audio Out and Mic In and Still Work after Wake
-- Sleep and Wake with Close and Open LID
-- LAN (Ethernet)
-- QE/CI of IGPU
-- HDMI Out
-- HDMI Audio
+- CPU Power Management
+- Internal Speaker, Internal Mic and External Headphone
+- Ethernet
+- Wifi
 - AirDrop
 - Handoff
-- Brightnes
-- Fn + Brightness UP/Down
-- CPU Power Management
-- USB 3.0 Full Working (Super Speed 5Gb/s full Working)
+- HDMI Out
+- HDMI Audio
+- Brightness
+- Brightness UP/Down
+- All USB Ports
 - Touchpad
-- Wifi
 - Battery Indicator
 - Etc
 
+
 ## Not Working
 - Nvidia Card (Switchable Graphics is not supported by Hackintosh)
-- Audio Sound may little bit glich when using OpenCore bootloader
+- HDMI Audio didn't come out (actually IDK how to fix it, hope somebody can test and help me to fix it)
 - Etc

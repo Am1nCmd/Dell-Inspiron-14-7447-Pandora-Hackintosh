@@ -6,6 +6,8 @@ Gather recovery information for Macs.
 Copyright (c) 2019, vit9696
 """
 
+from __future__ import print_function
+
 import argparse
 import datetime
 import json
@@ -16,10 +18,10 @@ import textwrap
 import time
 
 try:
-  from urllib.request import Request,urlopen
+  from urllib.request import Request,HTTPError,urlopen
   from urllib.parse import urlencode,urlparse
 except ImportError:
-  from urllib2 import Request,urlopen
+  from urllib2 import Request,HTTPError,urlopen
   from urllib import urlencode
   from urlparse import urlparse
 
@@ -44,7 +46,7 @@ INFO_SIGN_SESS  = 'CT'
 INFO_REQURED    = [ INFO_PRODUCT, INFO_IMAGE_LINK, INFO_IMAGE_HASH, INFO_IMAGE_SESS,
                     INFO_SIGN_LINK, INFO_SIGN_HASH, INFO_SIGN_SESS ]
 
-def run_query(url, headers, post=None):
+def run_query(url, headers, post=None, raw=False):
   if post is not None:
     data = '\n'.join([entry + '=' + post[entry] for entry in post])
     if sys.version_info[0] >= 3:
@@ -53,8 +55,13 @@ def run_query(url, headers, post=None):
     data = None
 
   req = Request(url=url, headers=headers, data=data)
-  response = urlopen(req)
-  return dict(response.info()), response.read()
+  try:
+    response = urlopen(req)
+    if raw: return response
+    return dict(response.info()), response.read()
+  except HTTPError as e:
+    print('ERROR: "{}" when connecting to {}'.format(e, url))
+    sys.exit(1)
 
 def generate_id(type, id=None):
   valid_chars = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F']
@@ -72,7 +79,7 @@ def mlb_from_eeee(eeee):
 
   return '00000000000' + eeee + '00'
 
-def get_session():
+def get_session(args):
   headers = {
     'Host'      : 'osrecovery.apple.com',
     'Connection': 'close',
@@ -80,6 +87,11 @@ def get_session():
   }
 
   headers, output = run_query('http://osrecovery.apple.com/', headers)
+
+  if args.verbose:
+    print('Session headers:')
+    for header in headers:
+      print('{}: {}'.format(header, headers[header]))
 
   for header in headers:
     if header.lower() == 'set-cookie':
@@ -97,7 +109,6 @@ def get_image_info(session, bid, mlb=MLB_ZERO, diag = False, os_type = 'default'
     'User-Agent'  : 'InternetRecovery/1.0',
     'Cookie'      : session,
     'Content-Type': 'text/plain',
-    'Expect'      : ''
   }
 
   post = {
@@ -150,7 +161,17 @@ def save_image(url, sess, filename='', dir=''):
   print('Saving ' + url + ' to ' + filename + '...')
 
   with open (os.path.join(dir, filename), 'wb') as fh:
-    fh.write(run_query(url, headers)[1])
+    response = run_query(url, headers, raw=True)
+    size = 0
+    while True:
+      chunk = response.read(2**20)
+      if not chunk:
+        break
+      fh.write(chunk)
+      size += len(chunk)
+      print('\r{} MBs downloaded...'.format(size / (2**20)), end='')
+      sys.stdout.flush()
+    print('\rDownload complete!')
 
 def action_download(args):
   """
@@ -180,9 +201,11 @@ def action_download(args):
   fg=B2E6AA07DB9088BE5BDB38DB2EA824FDDFB6C3AC5272203B32D89F9D8E3528DC
   """
 
-  session = get_session()
+  session = get_session(args)
   info    = get_image_info(session, bid=args.board_id, mlb=args.mlb,
     diag=args.diagnostics, os_type=args.os_type)
+  if args.verbose:
+    print(info)
   print('Downloading ' + info[INFO_PRODUCT] + '...')
   dmgname = '' if args.basename == '' else args.basename + '.dmg'
   save_image(info[INFO_IMAGE_LINK], info[INFO_IMAGE_SESS], dmgname, args.outdir)
@@ -207,7 +230,7 @@ def action_selfcheck(args):
   return default_recovery(ppp = ppp)              # Returns oldest.
   """
 
-  session = get_session()
+  session = get_session(args)
   valid_default    = get_image_info(session, bid=RECENT_MAC, mlb=MLB_VALID,
     diag=False, os_type='default')
   valid_latest     = get_image_info(session, bid=RECENT_MAC, mlb=MLB_VALID,
@@ -266,7 +289,7 @@ def action_verify(args):
   """
   Try to verify MLB serial number.
   """
-  session = get_session()
+  session = get_session(args)
   generic_latest   = get_image_info(session, bid=RECENT_MAC, mlb=MLB_ZERO,
     diag=False, os_type='latest')
   uvalid_default   = get_image_info(session, bid=args.board_id, mlb=args.mlb,
@@ -317,7 +340,7 @@ def action_guess(args):
 
   supported = {}
 
-  session = get_session()
+  session = get_session(args)
 
   generic_latest  = get_image_info(session, bid=RECENT_MAC, mlb=MLB_ZERO,
     diag=False, os_type='latest')
