@@ -16,7 +16,7 @@ Place EFI folder on your EFI Partition
 ## Specification :
 - Processor : Intel Core i7 4720HQ
 - IGPU : Intel HD Graphics 4600
-- GPU Discrette : Nvidia GT950M 4GB DDR3
+- GPU Discrette : Nvidia GTX 950M 4GB DDR3
 - RAM : 8GB DDR3 PC12800/1600Mhz (4GB + 4GB)
 - Storage : SSD Samsung 850 Pro 256GB + HDD Toshiba 1TB
 - Audio Codec : Realtek ALC255
@@ -40,7 +40,6 @@ Place EFI folder on your EFI Partition
 - AirDrop
 - Handoff
 - HDMI Out
-- HDMI Audio
 - Brightness
 - Brightness UP/Down
 - All USB Ports
