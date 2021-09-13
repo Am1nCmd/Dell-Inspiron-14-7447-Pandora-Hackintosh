@@ -39,7 +39,7 @@ Place EFI folder on your EFI Partition
 - Wifi
 - AirDrop
 - Handoff
-- HDMI Out
+- HDMI Out (Video & Audio)
 - Brightness
 - Brightness UP/Down
 - All USB Ports
@@ -50,5 +50,8 @@ Place EFI folder on your EFI Partition
 
 ## Not Working
 - Nvidia Card (Switchable Graphics is not supported by Hackintosh)
-- HDMI Audio didn't come out (actually IDK how to fix it, hope somebody can test and help me to fix it)
 - Etc
+
+##Known Issue
+- you need to attach HDMI cable before power on your OS, otherwise HDMI audio will not working (I'm testing it on HDMI (ARC))
+- you may need to install ALCPluginFix every time if you want to use headphone / earphone
