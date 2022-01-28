@@ -52,6 +52,6 @@ Place EFI folder on your EFI Partition
 - Nvidia Card (Switchable Graphics is not supported by Hackintosh)
 - Etc
 
-##Known Issue
+## Known Issue
 - you need to attach HDMI cable before power on your OS, otherwise HDMI audio will not working (I'm testing it on HDMI (ARC))
 - you may need to install ALCPluginFix every time if you want to use headphone / earphone
