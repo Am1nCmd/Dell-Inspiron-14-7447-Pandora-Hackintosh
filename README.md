@@ -1,6 +1,9 @@
 # Dell Inspiron 14 7447 Pandora Hackintosh
 [![image.png](https://i.postimg.cc/yN1XXpdF/image.png)](https://postimg.cc/XrPCn89J)
 
+## Update 4 Jun 2022
+- add EFI support for macOS Monterey 12.4
+
 ## Update 16 Aug 2021
 - Update to OpenCore Bootloader v0.7.2
 - Add support with macOS BigSur 11.5.2
